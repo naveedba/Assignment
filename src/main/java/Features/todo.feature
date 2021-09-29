@@ -11,11 +11,11 @@ Then Close the browser
 
 
 Scenario: Verification Of People Api returns response as 200
-Then verify People Api returns 200 as response code
+Given verify People Api returns 200 as response code
 
 
 Scenario Outline: Verify that height is greater than 200
-Then Verify that the total number of people "<total>" where height is greater than two hundred
+Given Verify that the total number of people "<total>" where height is greater than two hundred
 Examples:
 |total|
 |10|
@@ -23,7 +23,7 @@ Examples:
 
 @smoke
 Scenario Outline: Verify the 10 individual People
-Then Verify that following is the ten "<people>" returned By Api
+Given Verify that following is the ten "<people>" returned By Api
 Examples:
 |people|
 |Darth Vader,Chewbacca,Roos Tarpals,Rugor Nass,Yarael Poof,Lama Su,Tuan Wu,Grievous,Tarfful,Tion Medon|

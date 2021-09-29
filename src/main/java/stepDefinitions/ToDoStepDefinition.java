@@ -38,7 +38,7 @@ public class ToDoStepDefinition {
 	public void user_already_on_home_page() throws Exception {
 		WebDriverManager.firefoxdriver().setup();
 		driver=new FirefoxDriver();
-		driver.get("https://www.aspiration.com/");
+		driver.get(Configuration.readConfig("url"));
 		driver.manage().window().maximize();
 	}
 	
